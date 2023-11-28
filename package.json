@@ -1,0 +1,16 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-cypress": "node ./node_modules/cypress/bin/cypress open",
+    "start-run-recording": "npx cypress run --record --key c77e959e-5784-48f7-a210-491a24e81cbe"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.5.0"
+  }
+}
