@@ -7,25 +7,43 @@ describe("Stack Home Page", () => {
     cy.get("#testPage").click();
     cy.screenshot();
 
-    cy.get("#insertName").type("fake@email.com {enter}");
+    cy.get("#insertName").type("fake@email.com");
     cy.screenshot();
-    cy.get("#insertName").type("fake1@email.com {enter}");
+    cy.get("#insertName").type("{enter}");
     cy.screenshot();
-    cy.get("#insertName").type("fake2@email.com {enter}");
+
+    cy.get("#insertName").type("fake1@email.com");
     cy.screenshot();
-    cy.get("#insertName").type("fake3@email.com {enter}");
+    cy.get("#insertName").type("{enter}");
+    cy.screenshot();
+
+    cy.get("#insertName").type("fake2@email.com");
+    cy.screenshot();
+    cy.get("#insertName").type("{enter}");
+    cy.screenshot();
+
+    cy.get("#insertName").type("fake3@email.com");
+    cy.screenshot();
+    cy.get("#insertName").type("{enter}");
     cy.screenshot();
 
     cy.get("#insertName").type("fake4@email.com");
+    cy.screenshot();
     cy.get("#btnSave").click();
     cy.screenshot();
+
     cy.get("#insertName").type("fake5@email.com");
+    cy.screenshot();
     cy.get("#btnSave").click();
     cy.screenshot();
+
     cy.get("#insertName").type("fake6@email.com");
+    cy.screenshot();
     cy.get("#btnSave").click();
     cy.screenshot();
+
     cy.get("#insertName").type("fake7@email.com");
+    cy.screenshot();
     cy.get("#btnSave").click();
     cy.screenshot();
 

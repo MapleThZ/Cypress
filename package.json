@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-cypress": "node ./node_modules/cypress/bin/cypress open",
-    "start-run-recording": "npx cypress run --record --key c77e959e-5784-48f7-a210-491a24e81cbe"
+    "start-run-recording": "npx cypress run --record --key c77e959e-5784-48f7-a210-491a24e81cbe",
+    "cy-el": "npx cypress run --browser electron",
+    "cy-ed": "npx cypress run --browser edge"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.5.0"
+    "cypress": "^13.17.0"
   }
 }
